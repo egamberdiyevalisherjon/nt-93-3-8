@@ -1,0 +1,19 @@
+section#contact {
+  .flex {
+    gap: 1rem 3rem;
+  }
+
+  input,
+  select {
+    padding: {
+      top: 1rem;
+      bottom: 1rem;
+    }
+    width: 100%;
+    display: inline-block;
+  }
+
+  button {
+    align-self: flex-start;
+  }
+}

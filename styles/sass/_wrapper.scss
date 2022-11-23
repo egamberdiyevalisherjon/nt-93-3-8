@@ -1,0 +1,8 @@
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(rgba(yellow, 0.3), rgba(green, 0.3)),
+    linear-gradient(rgba(213, 32, 71, 0.8), rgba(238, 62, 27, 0.8)),
+    url("../../images/showcase.jpg") center / cover no-repeat fixed;
+}

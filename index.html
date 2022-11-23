@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/css/main.css" />
+    <title>CloudBudget</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="main-header">
+        <nav class="container flex justify-between align-center">
+          <a href="#" class="logo">
+            <i class="fa-solid fa-cloud"></i>
+            CloudBudget
+          </a>
+          <ul class="main-nav flex">
+            <li><a href="#">overview</a></li>
+            <li><a href="#">features</a></li>
+            <li><a href="#">technology</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">sign up</a></li>
+          </ul>
+
+          <div class="ctas flex align-center">
+            <div class="dropdown">
+              <label for="lang-drop" class="dropdown-title"
+                >En <i class="fa-solid fa-chevron-down"></i
+              ></label>
+              <input type="checkbox" id="lang-drop" hidden />
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">uz</a></li>
+                  <li><a href="#">ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="transparent-btn">Login</a>
+          </div>
+
+          <div class="dropdown mobile">
+            <label for="mobile-drop" class="dropdown-title">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="mobile-drop" hidden />
+            <div class="dropdown-menu">
+              <ul>
+                <li>overview</li>
+                <li>overview</li>
+                <li>overview</li>
+                <li>overview</li>
+                <li>overview</li>
+                <li>overview</li>
+                <li>overview</li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <section id="showcase">
+        <div class="container">
+          <h1>Cloud Budget</h1>
+          <p>
+            Cloud budget management for everyone. Only <br />
+            €69.95 a Month After a 7 Day Trial of <br />
+            Up to €4.99
+          </p>
+          <a href="#" class="white-btn">sign up</a>
+        </div>
+      </section>
+    </div>
+    <section id="contact">
+      <div class="container flex align-center">
+        <div class="portion">
+          <h2>Contact</h2>
+          <p>
+            Questions or concerns? Just fill out the form below and our support
+            team will get back to you within 24 hours
+          </p>
+        </div>
+        <div class="portion">
+          <form action="/contact" class="flex column">
+            <div class="flex">
+              <div class="portion">
+                <input type="text" name="fName" />
+              </div>
+              <div class="portion">
+                <input type="text" name="lName" />
+              </div>
+            </div>
+            <input type="tel" name="phone" />
+            <select>
+              <option value="QA">Question</option>
+              <option value="CN">Concern</option>
+            </select>
+            <button type="submit" class="pink-btn">Submit now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <div class="footer"></div>
+  </body>
+</html>

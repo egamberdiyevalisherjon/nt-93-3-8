@@ -1,0 +1,54 @@
+%btn {
+  all: unset;
+  box-sizing: border-box;
+  display: inline-block;
+  border-radius: $btn-radius;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  transition: 0.3s all ease-in-out;
+  padding: 0.4em 1.2em;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 0 20 currentColor;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.white-btn {
+  @extend %btn;
+  background-color: $white;
+  color: $pink;
+
+  &:hover {
+    background-color: $grey;
+  }
+}
+
+.transparent-btn {
+  @extend %btn;
+  border: 1px solid $white;
+  color: $white;
+  background-color: transparent;
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+}
+
+.pink-btn {
+  @extend %btn;
+  background-color: $pink;
+  color: $white;
+
+  &:hover {
+    background-color: rgba($pink, 0.9);
+  }
+}

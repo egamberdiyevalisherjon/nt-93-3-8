@@ -1,0 +1,46 @@
+.dropdown {
+  position: relative;
+
+  .dropdown-menu {
+    min-width: 200px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    transition: 0.3s all ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    // height: 0;
+    // overflow: hidden;
+    background-color: $white;
+    color: $black;
+    box-shadow: 0 0 20px $grey;
+    border-radius: $radius;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    li {
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        color: $pink;
+        text-indent: 1rem;
+      }
+    }
+  }
+
+  // input[type="checkbox"]:checked + .dropdown-menu {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
+
+  &:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    // height: 200px
+  }
+}

@@ -1,0 +1,16 @@
+section#showcase {
+  text-align: center;
+  text-transform: uppercase;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: $white;
+
+  p {
+    margin: {
+      top: 3rem;
+      bottom: 3rem;
+    }
+    line-height: 1.8;
+  }
+}
